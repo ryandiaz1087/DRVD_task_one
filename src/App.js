@@ -6,11 +6,15 @@ import styles from './App.module.css';
 
 function App() {
   const { DimensionProvider } = useDimensionStore();
+  const board = [];
+  for (let row = 1; row <= 8; row++) {
+    board.push(<CheckerBoard even={ row % 2 === 0 ? false : true} />)
+  }
   return (
     <div className={styles.container}>
       <DimensionProvider>
         <Form />
-        <CheckerBoard />
+        {board}
       </DimensionProvider>
     </div>
   );

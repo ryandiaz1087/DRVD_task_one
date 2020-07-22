@@ -1,6 +1,12 @@
 .checkerBoard {
   display: flex;
   justify-self: center;
+  flex-wrap: wrap;
   align-items: center;
   border: 1px solid black;
+}
+
+.row {
+  display: flex;
+  flex-basis: 100%;
 }

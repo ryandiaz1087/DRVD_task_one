@@ -6,12 +6,10 @@ const CheckerCell = ({ color }) => {
     content: '',
     width: '6rem',
     height: '6rem',
-    backgroundColor: color === 'white' ? 'white' : 'black'
+    backgroundColor: color,
   }
   return (
-    <div style={styles}>
-
-    </div>
+    <div style={styles} />
   );
 }
 
