@@ -1,10 +1,13 @@
 import React from 'react';
-// import styles from './App.module.css';
+import Form from './components/form/Form';
+import CheckerBoard from './components/checkerBoard/CheckerBoard';
+import styles from './App.module.css';
 
 function App() {
   return (
-    <div className="App">
-        TASK ONE
+    <div className={styles.container}>
+        <Form />
+        {/* <CheckerBoard /> */}
     </div>
   );
 }

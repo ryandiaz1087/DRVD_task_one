@@ -1,0 +1,15 @@
+.btnContainer {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  width: auto;
+}
+
+.btn {
+  margin: 2rem;
+  height: 2rem;
+  width: 7rem;
+  cursor: pointer;
+  background: none;
+  border: 1px solid black;
+}
