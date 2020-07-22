@@ -7,7 +7,7 @@ function App() {
   return (
     <div className={styles.container}>
         <Form />
-        {/* <CheckerBoard /> */}
+        <CheckerBoard />
     </div>
   );
 }
