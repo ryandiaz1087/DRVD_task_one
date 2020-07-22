@@ -1,9 +1,15 @@
 import React from 'react';
-import styles from './CheckerCell.module.css';
 
-const CheckerCell = () => {
+
+const CheckerCell = ({ color }) => {
+  const styles ={
+    content: '',
+    width: '6rem',
+    height: '6rem',
+    backgroundColor: color === 'white' ? 'white' : 'black'
+  }
   return (
-    <div className={styles.cell}>
+    <div style={styles}>
 
     </div>
   );

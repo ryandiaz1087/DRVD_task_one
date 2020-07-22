@@ -1,0 +1,6 @@
+.checkerBoard {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  border: 1px solid black;
+}
