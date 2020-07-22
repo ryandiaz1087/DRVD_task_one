@@ -1,29 +1,21 @@
 import React from 'react';
 import useDimensionStore from '../../state/useDimensionStore';
-import CheckerCell from './CheckerCell';
-import styles from './CheckerBoard.module.css';
+import CheckerRow from './CheckerRow';
+import styles from './CheckerBoard.module.css'
 
-const CheckerBoard = ({ even }) => {
+const CheckerBoard = () => {
   const { useDimension } = useDimensionStore();
   const { dimension } = useDimension();
 
+  const board = [];
+  for (let row = 1; row <= dimension; row++) {
+    board.push(<CheckerRow key={Math.random() * 1000} even={ row % 2 === 0 ? false : true} />)
+  }
   return (
-    <div className={styles.checkerBoard}>
-      {rowOfCells(dimension, even)}
+    <div className={styles.container}>
+      {board}
     </div>
   );
-}
-
-function rowOfCells(dimension, even) {
-  const board = [];
-  const num = even === true ? 0 : 1
-  for (let row = 1; row <= dimension; row++) {
-    board.push(
-    <div>
-      <CheckerCell color={row % 2 !== num ? 'black' : 'white'} />
-    </div>);
-  }
-  return board;
 }
 
 export default CheckerBoard;
