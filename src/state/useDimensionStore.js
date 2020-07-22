@@ -16,6 +16,7 @@ const dimensionReducer = (state = initialState, action) => {
   }
 }
 
+// Creating a 'Dimension' Store with custom hook
 const [
   DimensionProvider,
   useDimensionDispatch,

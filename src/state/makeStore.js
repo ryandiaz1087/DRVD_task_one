@@ -1,5 +1,6 @@
 import React, { createContext, useReducer, useContext } from 'react';
 
+// Scalable Custom hook to make a store for any part of the component tree
 const makeStore = (reducer, initialState) => {
   const dispatchContext = createContext();
   const storeContext = createContext();
