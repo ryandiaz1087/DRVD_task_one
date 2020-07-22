@@ -1,12 +1,8 @@
 import React from 'react';
-import useDimensionStore from './state/useDimensionStore';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.module.css';
-
 import * as serviceWorker from './serviceWorker';
-
-const { DimensionProvider } = useDimensionStore();
 
 const app = (
   <React.StrictMode>
