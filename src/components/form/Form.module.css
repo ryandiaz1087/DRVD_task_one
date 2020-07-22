@@ -1,8 +1,28 @@
-.formContainer {
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* z-index: 100; */
+  /* background-color: white; */
+}
+
+.form {
   margin: 2rem;
   width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.exit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 1rem;
+  background: none;
+  cursor: pointer;
 }

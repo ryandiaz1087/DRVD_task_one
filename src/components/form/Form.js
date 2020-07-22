@@ -14,11 +14,13 @@ const Form = () => {
   };
 
   return (
-    <div className={styles.formContainer}>
+    <div className={styles.container}>
+      <div className={styles.form}>
         <FormInput
           placeholder="Enter Dimension Here"
           value={dimension} onChange={setDimension} />
         <FormButton onClick={onSubmitHandler} />
+      </div>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 .checkerBoard {
   display: flex;
   justify-self: center;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
   align-items: center;
   border: 1px solid black;
 }
