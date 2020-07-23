@@ -14,13 +14,15 @@ const CheckerCell = ({ color }) => {
   }
 
   let checkerCellToRender = (
-    <div style={styles} />
+    <div style={cellStyles} />
   );
 
   if (doesHavePiece === true) {
     checkerCellToRender = (
       <div style={cellStyles}>
-        <div className={styles.piece} />
+        <button className={styles.btn}>
+          <div className={styles.piece} />
+        </button>
       </div>
     )
   }
