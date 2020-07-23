@@ -3,6 +3,7 @@ import makeStore from './makeStore';
 function buildBrandNewGame(size) {
   const checkerBoard = {}
   let checkerBoardRow;
+
   for (let row = 1; row <= size; row++) {
     checkerBoardRow = [];
     for(let col = 1; col <= size; col++) {
@@ -30,7 +31,7 @@ const gameReducer = (state = initialState, action) => {
       return {
         ...state,
         dimension: action.dimension,
-      }
+      };
     default:
       return state;
   }
