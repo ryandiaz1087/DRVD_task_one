@@ -1,5 +1,7 @@
-.cell {
+.piece {
   content: '';
-  width: 6rem;
-  height: 6rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: red;
+  border-radius: 50%;
 }

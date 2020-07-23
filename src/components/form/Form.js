@@ -13,13 +13,19 @@ const Form = () => {
     dispatch({ type: 'SET_DIMENSION', dimension: parseInt(dimension) });
   };
 
+  const onKeyPresshandler = (e) => {
+    if (e.key === 'Enter') {
+      console.log('Enter hit...');
+    }
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.form}>
         <FormInput
           placeholder="Enter Dimension Here"
           value={dimension} onChange={setDimension} />
-        <FormButton onClick={onSubmitHandler} />
+        <FormButton onClick={onSubmitHandler} onKeyPress={onKeyPresshandler} />
       </div>
     </div>
   );
