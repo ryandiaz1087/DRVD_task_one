@@ -1,17 +1,17 @@
 import React from 'react';
-import useDimensionStore from './state/useDimensionStore';
+import useGameStore from './state/useGameStore';
 import Form from './components/form/Form';
 import CheckerBoard from './components/checkerBoard/CheckerBoard';
 
 function App() {
-  const { DimensionProvider } = useDimensionStore();
+  const { GameProvider } = useGameStore();
 
   return (
     <>
-      <DimensionProvider>
+      <GameProvider>
         <Form />
         <CheckerBoard />
-      </DimensionProvider>
+      </GameProvider>
     </>
   );
 }

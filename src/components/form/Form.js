@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import useDimensionStore from '../../state/useDimensionStore';
+import useGameStore from '../../state/useGameStore';
 import FormInput from './FormInput';
 import FormButton from './FormButton';
 import styles from './Form.module.css';
 
 const Form = () => {
   const [dimension, setDimension] = useState('');
-  const { useDimensionDispatch } = useDimensionStore();
-  const dispatch = useDimensionDispatch();
+  const { useGameDispatch } = useGameStore();
+  const dispatch = useGameDispatch();
 
   const onSubmitHandler = () => {
     dispatch({ type: 'SET_DIMENSION', dimension: parseInt(dimension) });

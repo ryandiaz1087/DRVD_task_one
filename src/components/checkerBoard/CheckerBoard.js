@@ -1,12 +1,12 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import useDimensionStore from '../../state/useDimensionStore';
+import useGameStore from '../../state/useGameStore';
 import CheckerRow from './CheckerRow';
 import styles from './CheckerBoard.module.css'
 
 const CheckerBoard = () => {
-  const { useDimension } = useDimensionStore();
-  const { dimension } = useDimension();
+  const { useGame } = useGameStore();
+  const { dimension } = useGame();
 
   const board = [];
   for (let row = 1; row <= dimension; row++) {

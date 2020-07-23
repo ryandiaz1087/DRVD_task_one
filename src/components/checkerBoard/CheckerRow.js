@@ -1,12 +1,12 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import useDimensionStore from '../../state/useDimensionStore';
+import useGameStore from '../../state/useGameStore';
 import CheckerCell from './CheckerCell';
 import styles from './CheckerRow.module.css';
 
 const CheckerRow = ({ even }) => {
-  const { useDimension } = useDimensionStore();
-  const { dimension } = useDimension();
+  const { useGame } = useGameStore();
+  const { dimension } = useGame();
 
   return (
     <div className={styles.checkerBoard}>
